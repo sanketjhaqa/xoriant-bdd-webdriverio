@@ -12,10 +12,10 @@ sharedConfig.capabilities =
     'appium:autoGrantPermissions': true,
     'appium:appId':'com.saucelabs.SwagLabsMobileApp',
     'cjson:metadata':{
-        device: 'Pixel 8 Pro',
+        device: 'iPhone 15 Pro',
         platform:{
-            name:'Android',
-            version : '14.0'
+            name:'IOS',
+            version : '17.2'
         }
     }
 }];
