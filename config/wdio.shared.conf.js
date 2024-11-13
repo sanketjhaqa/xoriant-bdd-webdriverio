@@ -249,7 +249,7 @@ export const config = {
     beforeScenario: async function (world, context) {
         const cap = await browser.capabilities;
 	    let id = cap.appPackage;
-	    if(cap.platformName.toLocaleLowerCase()=='ios'){
+	    if(cap.platformName.toLowerCase()=='ios'){
 		    id=cap.appId;
 	    }  
         await driver.activateApp(id); 
