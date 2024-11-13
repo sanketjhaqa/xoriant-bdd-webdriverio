@@ -183,7 +183,6 @@ export const config = {
      */
     onPrepare: function (config, capabilities) {
         // Remove the `.tmp/` folder that holds the json and report files
-        fs.rm('./htmlReport',{recursive:true});
         return fs.rm('./jsonFiles', { recursive: true });
     },
     /**
