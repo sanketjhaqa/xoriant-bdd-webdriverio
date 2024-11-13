@@ -183,6 +183,7 @@ export const config = {
      */
     onPrepare: function (config, capabilities) {
         // Remove the `.tmp/` folder that holds the json and report files
+        fs.rm('./htmlReport',{recursive:true});
         return fs.rm('./jsonFiles', { recursive: true });
     },
     /**
@@ -292,7 +293,7 @@ export const config = {
     afterScenario: async function (world, result, context) {  
         const cap = await browser.capabilities;
 	    let id = cap.appPackage;
-	    if(cap.platformName.toLocaleLowerCase()=='ios'){
+	    if(cap.platformName.toLowerCase()=='ios'){
 		id=cap.appId;
 	    }
         await driver.terminateApp(id);
