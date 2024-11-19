@@ -8,7 +8,6 @@ Feature: To Validate Login Functionality
     Examples: With Valid Data Set
         | username      | password     |
         | standard_user | secret_sauce |
-    
-    Examples: With Invalid data set
-        | username      | password     |
-        | random        | random       |       
+        | random        | random       |  
+
+            
