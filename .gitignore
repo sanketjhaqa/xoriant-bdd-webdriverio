@@ -2,3 +2,5 @@
 /.vscode
 /htmlReport
 /jsonFiles
+.DS_Store
+
