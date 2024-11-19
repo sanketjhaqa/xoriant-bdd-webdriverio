@@ -3,10 +3,11 @@ import { $, browser, driver } from '@wdio/globals'
 
 class DashboardPage
 {   
-    // get Element named as PRODUCTS from dashboard page 
-    // finding element for IOS using IOS Class Chain
-    // for android using Xpath
     
+    /**
+     * error message element for android/ios
+     * @type {WebdriverIO.Element}
+     */
     get product(){
         if(browser.capabilities.platformName.toLowerCase()=='ios'){
             const selector = '**/XCUIElementTypeStaticText[`name == "PRODUCTS"`]';
