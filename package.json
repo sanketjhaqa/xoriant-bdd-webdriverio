@@ -11,6 +11,7 @@
     "appium-uiautomator2-driver": "^3.8.2",
     "appium-xcuitest-driver": "^7.30.0",
     "expect-webdriverio": "^5.0.4",
+    "jsdoc": "^4.0.4",
     "multiple-cucumber-html-reporter": "^3.8.0",
     "wdio-cucumberjs-json-reporter": "^6.0.1"
   },
