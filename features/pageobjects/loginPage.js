@@ -1,4 +1,4 @@
-import { $ } from '@wdio/globals'
+import { $, browser } from '@wdio/globals'
 
 class LoginPage {
 
@@ -17,6 +17,14 @@ class LoginPage {
         return $('~test-LOGIN')
     }
 
+
+    // get error message using accessbility-id
+    get errorMessage(){
+        if(browser.capabilities.platformName.toLowerCase()=='ios')
+            return $('~test-Error message').$('XCUIElementTypeStaticText');
+        else 
+            return $('~test-Error message').$('.android.widget.TextView');
+    }
 
     // entering login details and login into the dashboard
     async enterDetailsAndLogin(username,password){
