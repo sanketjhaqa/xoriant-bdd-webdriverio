@@ -8,9 +8,12 @@ Given('User should be on login page', async () => {
 	await expect(LoginPage.loginBtn).toBeDisplayed();
 });
 
+
+
 When('User log into the app with {string} and {string}', async (username, password) => {
 	await LoginPage.enterDetailsAndLogin(username, password);
 });
+
 
 Then('User should see text {string}', async (text) => {
 	let element = ""
