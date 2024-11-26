@@ -10,6 +10,8 @@ sharedConfig.capabilities =
     'appium:automationName': 'UiAutomator2',
     'appium:appWaitActivity': 'com.swaglabsmobileapp.MainActivity',
     'appium:autoGrantPermissions': true,
+    'appium:noReset':false,
+    'appium:fullReset':false,
     'cjson:metadata':{
         device: 'Pixel 8 Pro',
         platform:{

@@ -11,6 +11,8 @@ sharedConfig.capabilities =
     'appium:appWaitActivity': 'com.swaglabsmobileapp.MainActivity',
     'appium:autoGrantPermissions': true,
     'appium:appId':'com.saucelabs.SwagLabsMobileApp',
+    'appium:noReset':false,
+    'appium:fullReset':false,
     'cjson:metadata':{
         device: 'iPhone 15 Pro',
         platform:{

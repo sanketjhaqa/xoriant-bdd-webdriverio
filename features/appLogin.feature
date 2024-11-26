@@ -12,6 +12,12 @@ Feature: To Validate Login Functionality
         Then User should see text "Username and password do not match any user in this service."
 
 
+    Scenario: To Validate Login when Username is "InValid" and Password is "Valid"
+        Given User should be on login page
+        When User log into the app with "wrongUserName" and "secret_sauce"
+        Then User should see text "Username and password do not match any user in this service."
+
+
     Scenario: To Validate Login when Username and Password is "Invalid"
         Given User should be on login page
         When User log into the app with "random" and "randomTest"
